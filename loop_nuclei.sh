@@ -1,8 +1,9 @@
 #/bin/bash
 input="$1"
-while IFS= read -r line
-do
-nuclei -target $line -t ~/tools/nuclei-templates/
+#while IFS= read -r line
+#do
+#nuclei -target $line -t ~/tools/nuclei-templates/
+nuclei -l $1 —no-color -t ~/nuclei-templates/ 
 #nuclei -target $line -t ~/tools/nuclei-templates/technologies/
 #nuclei -target $line -t ~/tools/nuclei-templates/cves/
 #nuclei -target $line -t ~/tools/nuclei-templates/takeover/
@@ -18,4 +19,4 @@ nuclei -target $line -t ~/tools/nuclei-templates/
 #nuclei -target $line -t ~/tools/nuclei-templates/exposed-tokens/
 #nuclei -target $line -t ~/tools/nuclei-templates/vulnerabilities/
 sleep 3
-done <"${input}"
+#done <"${input}"
