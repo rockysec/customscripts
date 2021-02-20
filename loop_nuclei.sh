@@ -18,5 +18,5 @@ nuclei -l $1 —no-color -t ~/nuclei-templates/
 #nuclei -target $line -t ~/tools/nuclei-templates/misconfiguration/
 #nuclei -target $line -t ~/tools/nuclei-templates/exposed-tokens/
 #nuclei -target $line -t ~/tools/nuclei-templates/vulnerabilities/
-sleep 3
+#sleep 3
 #done <"${input}"
