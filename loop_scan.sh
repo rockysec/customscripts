@@ -1,7 +1,7 @@
 #/bin/bash
 input="$1"
-while IFS= read -r line
+while read -u 10 p;
 do
 bash ~/tools/RockySecTools/RockySecTool.sh -d $line
 sleep 3
-done <"${input}"
+done 10< "${1}"
