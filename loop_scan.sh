@@ -1,6 +1,6 @@
 #/bin/bash
 input="$1"
-while read -u 10 p;
+while read -u 10 line;
 do
 bash ~/tools/RockySecTools/RockySecTool.sh -d $line
 sleep 3
